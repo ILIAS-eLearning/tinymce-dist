@@ -1,7 +1,7 @@
 /* Copyright (c) 1998-2009 ILIAS open source, Extended GPL, see docs/LICENSE */
 
 (function() {
-
+    'use strict';
     tinymce.PluginManager.requireLangPack('ilfrmquote');
     tinymce.create('tinymce.plugins.ilFrmQuote', {
         /**
