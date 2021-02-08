@@ -30,7 +30,7 @@
 
             // Register button
             //editor.addButton in 5.x is no longer supported use the resgistry
-            var gif = "<img src='"+ url + "/images/quote.gif" +"'>";
+            var gif = "<img src='" + url + "/images/quote.gif" + "'>";
             ed.ui.registry.addIcon('ilFrmQuoteAjaxCall', gif);
             ed.ui.registry.addButton('ilFrmQuoteAjaxCall', {
                 //text: tinymce.translate('ilfrmquote.quote'),
