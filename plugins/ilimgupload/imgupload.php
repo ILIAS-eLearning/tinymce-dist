@@ -23,7 +23,7 @@ $lng->loadLanguageModule("form");
 $htdocs = $ilIliasIniFile->readVariable('server', 'absolute_path') . '/';
 $weburl = $ilIliasIniFile->readVariable('server', 'absolute_path') . '/';
 if (defined('ILIAS_HTTP_PATH')) {
-    $weburl = substr(ILIAS_HTTP_PATH, 0, strrpos(ILIAS_HTTP_PATH, '/Services')) . '/';
+    $weburl = substr(ILIAS_HTTP_PATH, 0, strrpos(ILIAS_HTTP_PATH, '/node_modules')) . '/';
 }
 
 $installpath = $htdocs;
