@@ -99,15 +99,15 @@
                 var elm = tinymce.activeEditor.selection.getNode();
                 if (latex_code.length > 0) {
                     if (elm == null) {
-                        editor.execCommand("mceInsertContent", false, '<span class="latex">' + latex_code + '</span> ');
+                        editor.execCommand("mceInsertContent", false, '<span class="latex">' + latex_code + '</span>');
                     } else {
                         var id = elm.getAttribute("class");
                         if (id == "latex") {
                             elm.innerHTML = "";
                             editor.execCommand("mceRemoveNode", false, elm);
-                            editor.execCommand("mceInsertContent", false, '<span class="latex">' + latex_code + '</span> ');
+                            editor.execCommand("mceInsertContent", false, '<span class="latex">' + latex_code + '</span>');
                         } else {
-                            editor.execCommand("mceInsertContent", false, '<span class="latex">' + latex_code + '</span> ');
+                            editor.execCommand("mceInsertContent", false, '<span class="latex">' + latex_code + '</span>');
                         }
                     }
                 }
